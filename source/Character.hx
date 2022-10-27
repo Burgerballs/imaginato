@@ -1,5 +1,6 @@
 package;
 
+import states.PlayState;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.animation.FlxBaseAnimation;

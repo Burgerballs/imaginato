@@ -1,5 +1,8 @@
 package;
 
+import states.FreeplayState;
+import states.StoryMenuState;
+import states.PlayState;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSubState;

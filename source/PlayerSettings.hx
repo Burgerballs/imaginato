@@ -149,6 +149,16 @@ class PlayerSettings
 		}
 
 		// DeviceManager.init();
+
+		if (FlxG.save.data.ghostnotes == null)
+			{
+				FlxG.save.data.ghostnotes = false;
+			}
+		if (FlxG.save.data.downscroll == null)
+			{
+				FlxG.save.data.downscroll = false;
+			}
+
 	}
 
 	static public function reset()

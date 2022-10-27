@@ -1,5 +1,7 @@
 package;
 
+import states.MainMenuState;
+import states.PlayState;
 import Controls.Control;
 import flixel.FlxG;
 import flixel.FlxSprite;

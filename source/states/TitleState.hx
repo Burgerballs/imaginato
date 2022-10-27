@@ -1,4 +1,4 @@
-package;
+package states;
 
 #if desktop
 import Discord.DiscordClient;
@@ -98,6 +98,12 @@ class TitleState extends MusicBeatState
 			DiscordClient.shutdown();
 		 });
 		#end
+
+		if (FlxG.save.data.fpscap == null)
+			{
+				FlxG.save.data.fpscap = 60;
+			}
+		openfl.Lib.current.stage.frameRate = FlxG.save.data.fpscap;
 	}
 
 	var logoBl:FlxSprite;

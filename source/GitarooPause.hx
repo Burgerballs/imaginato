@@ -1,5 +1,7 @@
 package;
 
+import states.MainMenuState;
+import states.PlayState;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;

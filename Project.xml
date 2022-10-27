@@ -156,8 +156,9 @@
 	<!--Enable this for Nape release builds for a serious peformance improvement-->
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
-	<haxedef name="HXCPP_BIG_BLOCKS"/>
+	<haxedef name="HXCPP_GC_BIG_BLOCKS"/>
 
+	<haxelib name="SScript"/>
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->

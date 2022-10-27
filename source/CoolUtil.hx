@@ -1,6 +1,9 @@
 package;
 
+import states.PlayState;
 import lime.utils.Assets;
+import sys.FileSystem;
+import openfl.utils.AssetType;
 
 using StringTools;
 
@@ -12,7 +15,16 @@ class CoolUtil
 	{
 		return difficultyArray[PlayState.storyDifficulty];
 	}
-
+	// does this even work at all?
+	inline public static function fileExists(path:String, type:AssetType = TEXT, ?library:Null<String>):Bool
+		{
+			var assetExists = FileSystem.exists(Paths.getPath(path, type, library));
+	
+			if (assetExists)
+				return true;
+	
+			return false;
+		}
 	public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:Array<String> = Assets.getText(path).trim().split('\n');
